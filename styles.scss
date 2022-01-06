@@ -1,0 +1,43 @@
+$very-dark-blue: #141C2F;
+$dark-blue: #1B355E;
+$light-blue: #1F2A48;
+$button-blue: #0079FC;
+
+body{
+    background-color: $very-dark-blue !important;
+}
+
+
+.container-body{
+    top: 100px;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
+    position: relative;
+
+    header{
+        .title{
+            float:left;
+            letter-spacing: 0.2em;
+        }
+
+        .light-mode{
+            float:right;
+
+            .sun-icon {
+                margin-left: 20px;
+            }
+
+            button{
+                border: 0;
+                color: white;
+                background-color: #141C2F;
+                letter-spacing: 0.2em;
+            }
+        }
+    }
+}
+
+p, h4 {
+    color: white;
+}
