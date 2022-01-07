@@ -93,6 +93,7 @@ body {
   padding: 20px;
   background-color: #1F2A48;
   margin-top: 20px;
+  border-radius: 10px;
 }
 
 .container-body .user-information .handle {
@@ -107,6 +108,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
 }
 
 .container-body .user-information .joined-date {
@@ -137,6 +139,7 @@ body {
 
 .container-body .user-information .user-location, .container-body .user-information .user-blog, .container-body .user-information .user-twitter, .container-body .user-information .user-github {
   color: #9EA5BF;
+  padding-left: 10px;
 }
 
 .container-body .user-information .github-information {
