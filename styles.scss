@@ -2,6 +2,7 @@ $very-dark-blue: #141C2F;
 $dark-blue: #1B355E;
 $light-blue: #1F2A48;
 $button-blue: #0079FC;
+$gray: #9EA5BF;
 
 body{
     background-color: $very-dark-blue !important;
@@ -16,28 +17,127 @@ body{
     position: relative;
 
     header{
+        height: 40px;
+        margin-bottom: 20px;
         .title{
             float:left;
             letter-spacing: 0.2em;
         }
 
-        .light-mode{
+        .brightness-mode{
             float:right;
 
             .sun-icon {
                 margin-left: 20px;
             }
 
-            button{
+            .dark-mode{
                 border: 0;
                 color: white;
                 background-color: #141C2F;
                 letter-spacing: 0.2em;
+                position: relative;
+                top: 3px;
             }
+
+            .light-mode{
+                border: 0;
+                color: #141C2F;
+                background-color: white;
+                letter-spacing: 0.2em;
+                display:none;
+                position: relative;
+                top: 3px;
+
+            }
+        }
+    }
+
+    input#search{
+        background-color: $light-blue;
+        height: 50px;
+        border-radius: 10px;
+        bordeR: 0;
+    }
+
+    input#search:focus,input#search::placeholder{
+        text-indent: 40px;
+        color:$gray;
+    }
+
+    .search-btn{
+        position: absolute;
+        top: 65px;
+        right: 10px;
+        border-radius: 10px;
+    }
+
+    .search-icon{
+        position: absolute;
+        top: 78px;
+        left: 20px;
+        color: $button-blue;
+    }
+
+    .user-information {
+        padding: 20px;
+        background-color: $light-blue;
+        margin-top: 20px;
+
+        .handle{
+            color:$button-blue !important;
+        }
+
+        .bio{
+            color:$gray !important;
+        }
+
+        .github-user-image{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .joined-date{
+            position: relative;
+            top: 7px;
+            color:$gray !important;
+        }
+
+        .github-statistics{
+            background-color:#141C2F;
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+
+        .text-heading{
+            margin-bottom:0.1rem;
+            color: $gray !important;
+        }
+
+        .text-result{
+            margin-bottom:0.1rem;
+        }
+
+        .icon{
+            color:white;
+        }
+
+        .user-location,.user-blog, .user-twitter, .user-github{
+            color:$gray;
+        }
+
+        .github-information{
+            margin-top:20px;
+        }
+
+        .location, .blog, .twitter, .github{
+            padding-bottom:10px;
         }
     }
 }
 
-p, h4 {
+p, h4, h3 {
     color: white;
 }

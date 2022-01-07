@@ -11,27 +11,143 @@ body {
   position: relative;
 }
 
+.container-body header {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
 .container-body header .title {
   float: left;
   letter-spacing: 0.2em;
 }
 
-.container-body header .light-mode {
+.container-body header .brightness-mode {
   float: right;
 }
 
-.container-body header .light-mode .sun-icon {
+.container-body header .brightness-mode .sun-icon {
   margin-left: 20px;
 }
 
-.container-body header .light-mode button {
+.container-body header .brightness-mode .dark-mode {
   border: 0;
   color: white;
   background-color: #141C2F;
   letter-spacing: 0.2em;
+  position: relative;
+  top: 3px;
 }
 
-p, h4 {
+.container-body header .brightness-mode .light-mode {
+  border: 0;
+  color: #141C2F;
+  background-color: white;
+  letter-spacing: 0.2em;
+  display: none;
+  position: relative;
+  top: 3px;
+}
+
+.container-body input#search {
+  background-color: #1F2A48;
+  height: 50px;
+  border-radius: 10px;
+  bordeR: 0;
+}
+
+.container-body input#search:focus, .container-body input#search::-webkit-input-placeholder {
+  text-indent: 40px;
+  color: #9EA5BF;
+}
+
+.container-body input#search:focus, .container-body input#search:-ms-input-placeholder {
+  text-indent: 40px;
+  color: #9EA5BF;
+}
+
+.container-body input#search:focus, .container-body input#search::-ms-input-placeholder {
+  text-indent: 40px;
+  color: #9EA5BF;
+}
+
+.container-body input#search:focus, .container-body input#search::placeholder {
+  text-indent: 40px;
+  color: #9EA5BF;
+}
+
+.container-body .search-btn {
+  position: absolute;
+  top: 65px;
+  right: 10px;
+  border-radius: 10px;
+}
+
+.container-body .search-icon {
+  position: absolute;
+  top: 78px;
+  left: 20px;
+  color: #0079FC;
+}
+
+.container-body .user-information {
+  padding: 20px;
+  background-color: #1F2A48;
+  margin-top: 20px;
+}
+
+.container-body .user-information .handle {
+  color: #0079FC !important;
+}
+
+.container-body .user-information .bio {
+  color: #9EA5BF !important;
+}
+
+.container-body .user-information .github-user-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-body .user-information .joined-date {
+  position: relative;
+  top: 7px;
+  color: #9EA5BF !important;
+}
+
+.container-body .user-information .github-statistics {
+  background-color: #141C2F;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+.container-body .user-information .text-heading {
+  margin-bottom: 0.1rem;
+  color: #9EA5BF !important;
+}
+
+.container-body .user-information .text-result {
+  margin-bottom: 0.1rem;
+}
+
+.container-body .user-information .icon {
+  color: white;
+}
+
+.container-body .user-information .user-location, .container-body .user-information .user-blog, .container-body .user-information .user-twitter, .container-body .user-information .user-github {
+  color: #9EA5BF;
+}
+
+.container-body .user-information .github-information {
+  margin-top: 20px;
+}
+
+.container-body .user-information .location, .container-body .user-information .blog, .container-body .user-information .twitter, .container-body .user-information .github {
+  padding-bottom: 10px;
+}
+
+p, h4, h3 {
   color: white;
 }
 /*# sourceMappingURL=styles.css.map */
