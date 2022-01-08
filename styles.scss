@@ -4,11 +4,6 @@ $light-blue: #1F2A48;
 $button-blue: #0079FC;
 $gray: #9EA5BF;
 
-body{
-    background-color: $very-dark-blue !important;
-}
-
-
 .container-body{
     top: 100px;
     left: 50%;
@@ -27,11 +22,11 @@ body{
         .brightness-mode{
             float:right;
 
-            .sun-icon {
+            .sun-icon, .moon-icon {
                 margin-left: 20px;
             }
 
-            .dark-mode{
+            .light-mode{
                 border: 0;
                 color: white;
                 background-color: #141C2F;
@@ -40,14 +35,14 @@ body{
                 top: 3px;
             }
 
-            .light-mode{
+            .dark-mode{
                 border: 0;
                 color: #141C2F;
-                background-color: white;
+                background-color: #F5F8FF;
                 letter-spacing: 0.2em;
-                display:none;
                 position: relative;
                 top: 3px;
+                display:none;
 
             }
         }

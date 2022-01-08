@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="dist/css/styles.css" type="text/css">
     <script src="https://kit.fontawesome.com/5c521f9cb6.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background-color: #141C2F">
 
     <div class="container-body">
         <header>
@@ -16,8 +16,8 @@
                 <h4>devfinder</h4>
             </div>
             <div class="brightness-mode">
-                <button class="dark-mode">LIGHT<i class="fas fa-sun sun-icon"></i></button>
-                <button class="light-mode">LIGHT<i class="fas fa-moon moon-icon"></i></button>
+                <button class="light-mode">LIGHT<i class="fas fa-sun sun-icon"></i></button>
+                <button class="dark-mode">DARK<i class="fas fa-moon moon-icon"></i></button>
             </div>
         </header>
 
@@ -160,7 +160,37 @@
             });
 
         });
+
+    $('.light-mode').click(function () {
+    $(this).css({"display":"none"});
+    $('.dark-mode').css({"display":"block"});
+    $('body').css({'background-color': '#F5F8FF'});
+    $('h4').css({'color': 'black'});
+    $('h3').css({'color':'black'});
+    $('input#search').css({'background-color': 'white'});
+    $('.user-information').css({'background-color': 'white'});
+    $('.text-result').css({'color': 'black'});
+    $('.icon').css({'color': 'black'});
+    $('.github-statistics').css({'background-color': '#F5F8FF'});
+
     });
+
+    $('.dark-mode').click(function () {
+        $(this).css({"display":"none"});
+        $('body').css({'background-color': '#141C2F'});
+        $('.light-mode').css({"display":"block"});
+        $('h4').css({'color': 'white'});
+        $('h3').css({'color':'white'});
+        $('input#search').css({'background-color': '#1F2A48'});
+        $('.user-information').css({'background-color': '#1F2A48'});
+        $('.text-result').css({'color': 'white'});
+         $('.icon').css({'color': 'white'});
+        $('.github-statistics').css({'background-color': '#141C2F'});
+    });
+
+    
+
+});
   </script>
 
 </body>
