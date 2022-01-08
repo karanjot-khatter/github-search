@@ -92,6 +92,14 @@
   border-radius: 10px;
 }
 
+.container-body .user-information .bio.mobile {
+  display: none;
+}
+
+.container-body .user-information .joined-date.mobile {
+  display: none;
+}
+
 .container-body .user-information .handle {
   color: #0079FC !important;
 }
@@ -148,5 +156,23 @@
 
 p, h4, h3 {
   color: white;
+}
+
+@media (max-width: 990px) {
+  .container-body {
+    width: 90%;
+  }
+  .joined-date.mobile {
+    display: block !important;
+  }
+  .bio.desktop {
+    display: none;
+  }
+  .joined-date.desktop {
+    display: none;
+  }
+  .bio.mobile {
+    display: block !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

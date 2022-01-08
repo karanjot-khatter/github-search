@@ -80,6 +80,14 @@ $gray: #9EA5BF;
         margin-top: 20px;
         border-radius: 10px;
 
+        .bio.mobile{
+            display:none;
+        }
+
+        .joined-date.mobile{
+            display:none;
+        }
+
         .handle{
             color:$button-blue !important;
         }
@@ -138,4 +146,24 @@ $gray: #9EA5BF;
 
 p, h4, h3 {
     color: white;
+}
+
+@media (max-width: 990px) {
+    .container-body{
+        width:90%;
+   }
+   .joined-date.mobile{
+       display:block !important;
+   }
+   .bio.desktop{
+       display:none;
+   }
+
+   .joined-date.desktop{
+       display:none;
+   }
+
+   .bio.mobile{
+       display:block !important;
+   }
 }
